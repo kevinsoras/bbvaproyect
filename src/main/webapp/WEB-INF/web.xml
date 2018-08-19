@@ -1,0 +1,22 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>controlador</servlet-name>
+  	<display-name>controlador</display-name>
+  	<description></description>
+  	<servlet-class>pe.edu.upeu.controller.controlador</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>controlador</servlet-name>
+  	<url-pattern>/ct</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+  <welcome-file>
+  	home.jsp
+  </welcome-file>
+  </welcome-file-list>
+</web-app>
