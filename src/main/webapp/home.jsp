@@ -35,7 +35,7 @@
     <br>
     </form>
     <div id="p1">
-    Digita tu clave secreta,
+    Digita tu clave secreta, 
     </div>
     <div id="p2">
     por favor.
