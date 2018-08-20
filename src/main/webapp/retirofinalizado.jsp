@@ -169,7 +169,7 @@ color: #41A2DB;
 	</div>
 	
 	<div id="retroceder">
-	Inicio
+	<a href="changec?op=9">Continuar</a>
 	</div>
 	<div id="imprimir">
 	Imprimir

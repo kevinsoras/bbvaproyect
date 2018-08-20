@@ -162,16 +162,16 @@ color: #41A2DB;
 	</div>
 	<div id="cuerpito">
 	<div>
-	 <input style="width: 20%; margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." placeholder="Monto a depositar"><br>
-	 <input style="width: 20%;margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." placeholder="N° de Cuenta">
-
+	 <input id ="montotransferencia" style="width: 20%; margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." placeholder="Monto a depositar"><br>
+	 <input id="cuentatransferencia" style="width: 20%;margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." placeholder="N° de Cuenta">
+	<input type="hidden" value=${sessionScope.idcliente} id="idclientetrans">
 	</div>
 	
 	<div id="retroceder">
-	Retroceder
+	<a href="changec?op=2">Retroceder</a>
 	</div>
 	<div id="imprimir">
-	Confirmar
+	<a id="confirmartransferencia">Confirmar</a>
 	</div>
 	</div>
 	
@@ -193,6 +193,7 @@ color: #41A2DB;
 <script  src="js/jquery-3.3.1.min.js" ></script>
 
 <script  src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/deposito.js"></script>
 
 </body>
 </html>

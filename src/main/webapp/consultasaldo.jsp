@@ -158,9 +158,9 @@ color: #41A2DB;
 	<p id="letra2">Continental</p>
 	</div>
 	<div id="cuerpito">
-	<h1 id="letra">Saldo: </h1><input class="form-control" id="saldo">
+	<h1 id="letra">Saldo:  ${sessionScope.saldo} </h1>
 	<div id="retroceder">
-	Retroceder
+	<a href="changec?op=6">Retroceder</a>
 	</div>
 	<div id="imprimir">
 	Imprimir

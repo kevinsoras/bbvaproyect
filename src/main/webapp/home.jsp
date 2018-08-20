@@ -10,36 +10,44 @@
 </head>
 <body>
 <div id="cuerpo">
+<form action="menuc">
+
 	<div id="titulo">
 	<p id="letra1">BBVA</p>
 	<p id="letra2">Continental</p>
-	</div>
-	  <form name="calculator" class="numeral">
+	</div >
+	  
+    <div class="numeral">
+    <br>
+    <input type="button" value="1" id="n1">
+    <input type="button" value="2" id="n2">
+    <input type="button" value="3" id="n3">
+    <br>
+    <input type="button" value="4"id="n4">
+    <input type="button" value="5" id="n5">
+    <input type="button" value="6" id="n6">
+    <br>
+    <input type="button" value="7" id="n7">
+    <input type="button" value="8" id="n8">
+    <input type="button" value="9" id="n9">
+    <br>
+    <input type="button" value=" " >
+    <input type="button" value=" " >
+    <input type="submit" id="aceptar" value="DO" >
+    <br>
+    </div>
     
-    <br>
-    <input type="button" value="1" onClick="document.calculator.ans.value+='1'">
-    <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
-    <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
-    <br>
-    <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
-    <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
-    <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
-    <br>
-    <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
-    <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
-    <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
-    <br>
-    <input type="button" value=" " onClick="document.calculator.ans.value+='7'">
-    <input type="button" value=" " onClick="document.calculator.ans.value+='8'">
-    <input type="button" id="aceptar" value="DO" onClick="document.calculator.ans.value+='9'">
-    <br>
-    </form>
     <div id="p1">
     Digita tu clave secreta, 
     </div>
     <div id="p2">
     por favor.
     </div>
+    
+    <div >
+     <input id="ans" name="cc">
+    </div>
+   </form>
 </div>
 <div id="tirasuperior">
 	<div id="t1">
@@ -56,6 +64,7 @@
 	</div>
 </div>
 
-
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
 </body>
 </html>

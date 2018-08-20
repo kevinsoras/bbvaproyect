@@ -36,11 +36,11 @@ public class MovimientoInternoDaoImp implements MovimientoInternoDao {
             cs = cx.prepareCall("{call ListarMovimientoInterno (?)}");
             rs = cs.executeQuery();
             while (rs.next()) {
-                MovimientoExterno miv = new MovimientoExterno();
+                MovimientoInterno miv = new MovimientoInterno();
                 cst.setInt(1,a.getIdcliente1());
-                miv.setIdmovimientoexterno(rs.getInt(1));
-                miv.setIdcliente1(rs.getInt(2));
-                miv.setIdcliente2(rs.getInt(3));               
+                miv.setIdmovimientointerno(rs.getInt(1));
+                miv.setIdcliente(rs.getInt(2));
+                miv.setTipo(rs.getString(3));               
                 movin.add(miv);
             }
         } catch (SQLException e) {

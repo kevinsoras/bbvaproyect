@@ -101,15 +101,15 @@ height: 480px;
 	<div id="cuerpito">
 	<div class="jumbotron">
 	
-  <h1>Monto:<input style="width: 20%;margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." >
+  <h1>Monto:<input id="depositointerno" style="width: 20%;margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." >
        
        <div style="width: 150px;height: 80px;">
-	
+	<input  type = "hidden" value=${sessionScope.idcliente} id="idcliente">
 	</div>
        <div style="width: 80%;height: 150px;float: left;margin-top: 80px;float: left;">
-       <p><a class="btn btn-primary btn-lg" style="float: left;padding: 38px; href="#" role="button">Retroceda</a></p>
+       <p><a class="btn btn-primary btn-lg" style="float: left;padding: 38px;" href="changec?op=2" role="button">Retroceda</a></p>
     
-                   <p><a class="btn btn-primary btn-lg" href="#" style="float: right;padding: 38px;"  role="button">Confirmar</a></p>
+                   <p ><a id="botondepositointerno" class="btn btn-primary btn-lg" style="float: right;padding: 38px;"  role="button">Confirmar</a></p>
        
        </div>
   
@@ -137,6 +137,6 @@ height: 480px;
 <script  src="js/jquery-3.3.1.min.js" ></script>
 
 <script  src="js/bootstrap.js"></script>
-
+<script  src="js/deposito.js"></script>
 </body>
 </html>

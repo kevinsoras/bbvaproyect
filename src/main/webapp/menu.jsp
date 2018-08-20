@@ -126,14 +126,18 @@ box-shadow: inset 0 0 0 3px #3a7999;
 	<p id="letra2">Continental</p>
 	</div>
 	<div id="botones"> 
-	<div id="b1">CSSS
+	<div id="b1">
+	<a href="changec?op=1">Consultar Saldo</a>
 	</div>
-	<div id="b2">RDDD
+	<div id="b2">
+	<a href="changec?op=2">Realizar Deposito</a>
 	</div>
-	<div id="b3">SRRR
+	<div id="b3">
+	<a href="changec?op=5">Realizar Retiro</a>
 	</div>
-	<div id="b4">ASRAS</div>
+	<a id="b4" href="changec?op=11"  >Consultar Movimientos</a> 
 	</div>
+	
 	
 </div>
 <div id="tirasuperior">

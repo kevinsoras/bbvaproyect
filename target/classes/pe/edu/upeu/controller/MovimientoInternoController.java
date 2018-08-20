@@ -53,9 +53,6 @@ public class MovimientoInternoController extends HttpServlet {
             		}
             		
             		break;
-            		
-                    
-            
         }
 	}
 

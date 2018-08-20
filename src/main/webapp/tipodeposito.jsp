@@ -163,17 +163,17 @@ color: #41A2DB;
 	<div id="cuerpito">
 	<div style="width: 60%;height: 130px;margin: auto;">
 	 <div>
-	   <button type="button" class="btn btn-primary" style="float: left;padding: 40px;width: 45%;font-size: 30px;">Deposito Abono</button>
+	   <div type="button" class="btn btn-primary" style="float: left;padding: 40px;width: 45%;font-size: 30px;"><a href="changec?op=3">Deposito Abono</a></div>
 	 
 	 </div>
 	 <div>
-	   <button type="button" class="btn btn-primary" style="float: left;margin-left:10%;padding: 40px;width: 45%;font-size: 30px;">Deposito Externo</button>
+	   <div type="button" class="btn btn-primary" style="float: left;margin-left:10%;padding: 40px;width: 45%;font-size: 30px;"><a href="changec?op=4">Deposito Externo</a></div>
 	 
 	 </div>
 	</div>
 	
 	<div id="retroceder">
-	Regresar
+	<a href="changec?op=6">Retroceder</a>
 	</div>
 	
 	</div>

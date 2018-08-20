@@ -101,16 +101,16 @@ height: 480px;
 	<div id="cuerpito">
 	<div class="jumbotron">
 	
-  <h1>Monto:<input style="width: 20%;margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." >
+  <h1>Monto:<input id="retiroinput" style="width: 20%;margin: auto;padding: 30px;font-size: 20px;" type="text" class="form-control" aria-label="..." >
        
        <div style="width: 150px;height: 80px;">
-	    <p><a class="btn btn-primary btn-lg" style="float: left;width: 150px;height: 70px;" href="#" role="button">Ver saldo</a></p>
-	
+	    <p><a class="btn btn-primary btn-lg" style="float: left;width: 150px;height: 70px;" href="changec?op=1" role="button">Ver saldo</a></p>
+	     <input  type = "hidden" value=${sessionScope.idcliente} id="idclienteretiro">
 	</div>
        <div style="width: 80%;height: 150px;float: left;margin-top: 80px;float: left;">
-       <p><a class="btn btn-primary btn-lg" style="float: left;padding: 38px; href="#" role="button">Retroceda</a></p>
+       <p><a class="btn btn-primary btn-lg" style="float: left;padding: 38px;" href="changec?op=6" role="button">Retroceda</a></p>
     
-                   <p><a class="btn btn-primary btn-lg" href="#" style="float: right;padding: 38px;"  role="button">Confirmar</a></p>
+                   <p><a id="retiroboton" class="btn btn-primary btn-lg"  style="float: right;padding: 38px;"  role="button">Confirmar</a></p>
        
        </div>
   
@@ -138,6 +138,6 @@ height: 480px;
 <script  src="js/jquery-3.3.1.min.js" ></script>
 
 <script  src="js/bootstrap.js"></script>
-
+<script type="text/javascript" src="js/deposito.js"></script>
 </body>
 </html>
