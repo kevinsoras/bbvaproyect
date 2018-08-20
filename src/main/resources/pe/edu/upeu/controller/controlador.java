@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class controlador extends HttpServlet {
 	private static final long serialVersionUID = 1L;
+	private Gson g = new Gson();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -25,15 +26,27 @@ public class controlador extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		int op=request.getParameter("op");
-		switch (op) {
-		
-		case 0:
-			
-			break;
+		int op = Integer.parseInt(request.getParameter("opc"));
+        switch(op){
+            case 1:
+                out.println(g.toJson(d.listarDevolucion()));
+                break;
+            case 2:
+                 Prestamo pre = new Prestamo(Integer.parseInt(request.getParameter("idprestamo")),Integer.parseInt(request.getParameter("idproducto")));
 
-		
-		}
+                 pres.update(pre);
+                 break;
+            case 3: 
+                Devon kop = new Devon(request.getParameter("det"),Integer.parseInt(request.getParameter("idpro")));
+                k.create(kop);
+                break;
+            case 5:
+                 out.println(g.toJson(d.ListarProductosByFecha(request.getParameter("fecha"),request.getParameter("nom"),request.getParameter("ape"))));
+                 break;
+            case 6: out.print(g.toJson(k.listt()));
+            break;
+                
+        }
 	
 	}
 
