@@ -4,7 +4,8 @@ $(document).ready(function () {
 
 var x,y,z;
 
-$.get("Pc", {"opc": 4}, function (data) {
+// Movimiento Externo
+$.get("mec", {"opc": 4}, function (data) {
      x = JSON.parse(data);
  return x;
 });
