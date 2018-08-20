@@ -28,38 +28,26 @@ public class MovimientoExternoDaoImp implements MovimientoExternoDao{
         }
         return x;
 	}
+	
 	@Override
-    public List<MovimientoInternodao> readAll() {
-        List<MovimientoInterno> movi = new ArrayList<>();
+    public List<MovimientoExternoDao> readAll() {
+        List<MovimientoExterno> movi = new ArrayList<>();
         try {
             cx = Conexion.getConexion();
             cs = cx.prepareCall("{call ListarMovimientoExterno (?)}");
             rs = cs.executeQuery();
             while (rs.next()) {
-                MovimientoInterno miv = new MovimientoInterno();
+                MovimientoExterno miv = new MovimientoExterno();
                 cst.setInt(1,a.getIdcliente1());
-                miv.setIdmovimientointerno(rs.getInt(1));
-                miv.setIdcliente(rs.getInt(2));
-                p.setIdprestamo(rs.getInt(1));
-                p.setEstado(rs.getInt(2));
-                p.setNom_alumno(rs.getString(4));
-                p.setAula(rs.getString(6));
-                p.setFe_prestamo(rs.getString(3));
-                p.setFe_devolucion(rs.getString(5));
-                p.setHora_pre(rs.getString(10));
-                p.setHora_devo(rs.getString(11));
-                p.setId_profe(rs.getInt(7));
-                p.setId_documento(rs.getInt(8));
-                p.setId_user(rs.getInt(9));
-                p.setNom_user(rs.getString(12));
-                p.setNom_profe(rs.getString(13));
-                
-                pre.add(p);
+                miv.setIdmovimientoexterno(rs.getInt(1));
+                miv.setIdcliente1(rs.getInt(2));
+                miv.setIdcliente2(rs.getInt(3));               
+                movi.add(miv);
             }
         } catch (SQLException e) {
             System.out.println("Error: " + e);
         }
-        return pre;
+        return movi;
     }
 
 }

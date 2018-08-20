@@ -6,6 +6,4 @@ public interface MovimientoInternoDao {
 
 	int create(MovimientoInterno a,double monto);
 	List<MovimientoInternodao> readAll;
-	
-	
 }
